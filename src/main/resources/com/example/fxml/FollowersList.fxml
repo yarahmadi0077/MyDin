@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.controllers.FollowersListController">
+    <Label text="Followers List" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <TableView fx:id="followersTable">
+        <columns>
+            <TableColumn fx:id="colFullName" text="Full Name"/>
+            <TableColumn fx:id="colEmail" text="Email"/>
+        </columns>
+    </TableView>
+    <Button text="Close" onAction="#closeWindow"/>
+</VBox>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="887.0">
+         <children>
+            <AnchorPane layoutX="-11.0" layoutY="197.0" minHeight="0.0" minWidth="0.0" prefHeight="1200.0" prefWidth="887.0">
+               <children>
+                  <AnchorPane layoutY="-709.0" prefHeight="1213.0" prefWidth="875.0" AnchorPane.topAnchor="-709.0">
+                     <children>
+                        <Label layoutX="35.0" prefHeight="34.0" prefWidth="162.0" text="*Indicates required">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="55.0" prefHeight="34.0" prefWidth="162.0" text="School*">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="35.0" layoutY="89.0" prefHeight="26.0" prefWidth="806.0" promptText="Ex; Boston University">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="35.0" layoutY="155.0" prefHeight="34.0" prefWidth="162.0" text="Degree">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="35.0" layoutY="187.0" prefHeight="26.0" prefWidth="806.0" promptText="Ex: Bachelors">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="35.0" layoutY="245.0" prefHeight="34.0" prefWidth="162.0" text="Field of study">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="34.0" layoutY="279.0" prefHeight="26.0" prefWidth="806.0" promptText="Ex: Business">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="35.0" layoutY="333.0" prefHeight="34.0" prefWidth="162.0" text="Start date">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="34.0" layoutY="376.0" prefHeight="26.0" prefWidth="396.0" promptText="Month" visibleRowCount="12" />
+                        <ComboBox layoutX="438.0" layoutY="376.0" prefHeight="26.0" prefWidth="396.0" promptText="Year" visibleRowCount="12" />
+                        <Label layoutX="35.0" layoutY="441.0" prefHeight="34.0" prefWidth="162.0" text="Grade">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="34.0" layoutY="475.0" prefHeight="26.0" prefWidth="806.0" promptText=" ">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="35.0" layoutY="556.0" prefHeight="34.0" prefWidth="162.0" text="Activities and societies">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField cache="true" cacheHint="SPEED" layoutX="34.0" layoutY="602.0" prefHeight="126.0" prefWidth="806.0" promptText="Ex: Alpha Phi Omega, Marching Band, Volleyball">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="41.0" layoutY="762.0" prefHeight="34.0" prefWidth="162.0" text="Description">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField cache="true" cacheHint="SPEED" layoutX="34.0" layoutY="809.0" prefHeight="142.0" prefWidth="806.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="41.0" layoutY="1034.0" prefHeight="34.0" prefWidth="162.0" text="Skills">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="41.0" layoutY="1077.0" prefHeight="34.0" prefWidth="806.0" text="We recommended adding your top 5 used in this experience. Theyll also appear in your Skills section.">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="41.0" layoutY="1124.0" mnemonicParsing="false" text="+ Add skill">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

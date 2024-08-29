@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.controllers.CommentController">
+    <children>
+      <BorderPane prefHeight="600.0" prefWidth="800.0">
+         <top>
+            <AnchorPane prefHeight="55.0" prefWidth="800.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+               <children>
+                    <Label layoutX="340.0" layoutY="14.0" text="Add Comment">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="48.0" fitWidth="146.0" layoutX="659.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/aut.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="146.0" layoutX="717.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/ce.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="79.0" layoutX="26.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/my_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="600.0" prefWidth="28.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="600.0" prefWidth="28.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="34.0" prefWidth="800.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+               <children>
+                    <Button layoutX="365.0" layoutY="5.0" onAction="#handleComment" style="-fx-background-color: white;" text="Comment">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+              <TextArea fx:id="commentContent" promptText="Write your comment here (max 1250 characters)" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+    </children>
+</VBox>

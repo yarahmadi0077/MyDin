@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.UserProfileController">
+    <children>
+        <VBox alignment="CENTER" prefHeight="600.0" prefWidth="800.0" spacing="20.0" style="-fx-background-color: white;">
+            <children>
+                <GridPane hgap="10" nodeOrientation="LEFT_TO_RIGHT" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" />
+                        <ColumnConstraints halignment="LEFT" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+                    <children>
+                        <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Full Name:">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font></Label>
+                        <Label fx:id="lblFullName" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Email:" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font></Label>
+                        <Label fx:id="lblEmail" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="City:" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font></Label>
+                        <Label fx:id="lblCity" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Country:" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font></Label>
+                        <Label fx:id="lblCountry" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" text="Profession:" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font></Label>
+                        <Label fx:id="lblProfession" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    </children>
+                </GridPane>
+                <TextArea fx:id="txtNotes" prefHeight="100.0" prefWidth="719.0" promptText="Notes (max 500 characters)" wrapText="true" />
+            <HBox prefHeight="30.0" prefWidth="200.0" />
+                  <Button onAction="#followUser" style="-fx-background-color: #1E90FF;" text="Follow" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Button>
+                  <Button onAction="#connectUser" style="-fx-background-color: #1E90FF;" text="Connect" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Button>
+                  <Button onAction="#viewFollowers" style="-fx-background-color: #1E90FF;" text="View Followers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Button>
+                  <Button onAction="#viewFollowings" style="-fx-background-color: #1E90FF;" text="View Followings" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="11.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+      <ImageView fitHeight="48.0" fitWidth="102.0" layoutX="51.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/my_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="102.0" layoutX="664.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="57.0" layoutX="712.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/amirkabir.png" />
+         </image>
+      </ImageView>
+          <Label layoutX="344.0" layoutY="13.0" style="-fx-font-size: 24;" text="User Profile">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

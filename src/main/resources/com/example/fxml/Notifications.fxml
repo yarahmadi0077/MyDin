@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="300.0" prefWidth="400.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.controllers.NotificationController">
+    <children>
+      <BorderPane prefHeight="300.0" prefWidth="400.0">
+         <center>
+              <ListView fx:id="notificationListView" prefHeight="61.0" prefWidth="80.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="10.0" prefWidth="410.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER" />
+         </top>
+         <left>
+            <AnchorPane prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: #1E90FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="94.0" text="Ummm! You have unread notification" textFill="#f4f1f1">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+    </children>
+</VBox>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fitToWidth="true" prefHeight="1622.0" prefWidth="477.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.ProfileController">
+    <VBox alignment="TOP_CENTER" spacing="10" style="-fx-padding: 10; -fx-background-color: white;">
+        <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Profile" />
+        <!-- Profile Image Button -->
+        <Button fx:id="profileImageButton" onAction="#chooseProfileImage" style="-fx-background-color: #1E90FF;" text="Choose Profile Image" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+        <!-- Background Image Button -->
+        <Button fx:id="backgroundImageButton" onAction="#chooseBackgroundImage" style="-fx-background-color: #1E90FF;" text="Choose Background Image" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Introduction" />
+        <TextField fx:id="firstNameField" promptText="First Name" />
+        <TextField fx:id="lastNameField" promptText="Last Name" />
+        <TextField fx:id="additionalNameField" promptText="Additional Name" />
+        <TextField fx:id="titleField" promptText="Title" />
+        <TextField fx:id="countryField" promptText="Country" />
+        <TextField fx:id="cityField" promptText="City" />
+        <TextField fx:id="professionField" promptText="Profession" />
+        <TextField fx:id="emailField" promptText="Email" />
+
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Contact Information" />
+        <TextField fx:id="phoneNumberField" promptText="Phone Number" />
+        <ComboBox fx:id="phoneTypeComboBox" promptText="Phone Type" style="-fx-background-color: #1E90FF;" />
+        <TextField fx:id="addressField" promptText="Address" />
+        <DatePicker fx:id="birthdayPicker" promptText="Birthday" />
+        <ComboBox fx:id="birthdayAccessComboBox" promptText="Birthday Access" style="-fx-background-color: #1E90FF;" />
+        <TextField fx:id="otherWayField" promptText="Other Ways to Contact" />
+
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Work Experience" />
+        <TextField fx:id="jobTitleField" promptText="Job Title" />
+        <ComboBox fx:id="employmentTypeComboBox" promptText="Employment Type" style="-fx-background-color: #1E90FF;" />
+        <TextField fx:id="companyNameField" promptText="Company Name" />
+        <TextField fx:id="locationField" promptText="Location" />
+        <ComboBox fx:id="locationTypeComboBox" promptText="Location Type" style="-fx-background-color: #1E90FF;" />
+        <CheckBox fx:id="activityCheckBox" text="Currently Active" />
+        <DatePicker fx:id="startToWorkPicker" promptText="Start Date" />
+        <DatePicker fx:id="endToWorkPicker" promptText="End Date" />
+        <TextArea fx:id="jobDescriptionArea" promptText="Job Description" />
+
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Education" />
+        <TextField fx:id="schoolNameField" promptText="School/University Name" />
+        <TextField fx:id="fieldOfStudyField" promptText="Field of Study" />
+        <DatePicker fx:id="educationStartPicker" promptText="Start Date" />
+        <DatePicker fx:id="educationEndPicker" promptText="End Date" />
+        <TextField fx:id="gradeField" promptText="Grade" />
+        <TextArea fx:id="activitiesField" promptText="Activities and Awards" />
+        <TextArea fx:id="educationDescriptionArea" promptText="Education Description" />
+
+        <Label style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Certificates and Licenses" />
+        <TextField fx:id="certificateNameField" promptText="Certificate Name" />
+        <TextField fx:id="issuingOrgField" promptText="Issuing Organization" />
+        <DatePicker fx:id="issueDatePicker" promptText="Issue Date" />
+        <DatePicker fx:id="expiryDatePicker" promptText="Expiry Date" />
+        <TextField fx:id="credentialIdField" promptText="Credential ID" />
+        <TextField fx:id="credentialUrlField" promptText="Credential URL" />
+
+        <Button onAction="#saveProfile" style="-fx-background-color: #1E90FF;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+    </VBox>
+</ScrollPane>

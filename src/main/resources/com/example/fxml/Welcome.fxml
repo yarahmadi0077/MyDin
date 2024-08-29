@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.WelcomeController">
+    <children>
+        <Label fx:id="welcomeLabel" layoutX="69.0" layoutY="104.0" text="Welcome to your ">
+            <font>
+                <Font name="System Bold Italic" size="35.0" />
+            </font>
+        </Label>
+        <Label fx:id="welcomeLabel1" layoutX="192.0" layoutY="155.0" text="professional community">
+            <font>
+                <Font name="System Bold Italic" size="35.0" />
+            </font>
+        </Label>
+        <Button fx:id="signInButton" layoutX="350.0" layoutY="430.0" mnemonicParsing="false" style="-fx-background-color: #1E90FF;" text="Sign in" textFill="#ece3e3">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+        <TextField fx:id="loginEmail" layoutX="303.0" layoutY="298.0" />
+        <PasswordField fx:id="loginPassword" layoutX="303.0" layoutY="378.0" />
+        <Label layoutX="303.0" layoutY="348.0" text="Password">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="303.0" layoutY="276.0" text="Email">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="signUpButton" layoutX="306.0" layoutY="540.0" mnemonicParsing="false" style="-fx-background-color: #1E90FF;" text="new to MyIn? Join now" textFill="#faf6f6">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="96.0" fitWidth="150.0" layoutX="53.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/my_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="140.0" fitWidth="67.0" layoutX="597.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="124.0" fitWidth="80.0" layoutX="664.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/amirkabir.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
